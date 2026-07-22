@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+
+message: "If you use this software or methodology in your research, please cite this work."
+
+title: "GeoAI Crop Mapping Platform with Satellite Foundation Models"
+
+type: software
+
+authors:
+  - family-names: "Fathi"
+    given-names: "Hannah"
+
+
+version: "1.0.0"
+
+date-released: "2025-10-22"
+
+repository-code: "https://github.com/hannah-fathi/GeoAI-Crop-Mapping-Platform-with-Satellite-Foundation-Models"
+
+keywords:
+  - GeoAI
+  - Remote Sensing
+  - Earth Observation
+  - Satellite Foundation Models
+  - AlphaEarth
+  - Galileo
+  - Precision Agriculture
+  - Crop Mapping
+  - GIS
+  - Machine Learning
+  - Agricultural Intelligence
+
+abstract: >
+  An end-to-end GeoAI research and engineering platform for agricultural
+  monitoring and field-level crop mapping using satellite foundation model
+  representations, AlphaEarth embeddings, Galileo satellite representations,
+  GIS analytics, NDVI-based vegetation intelligence, and machine learning
+  classification.
+
+license: MIT
+
+repository: "https://github.com/hannah-fathi/GeoAI-Crop-Mapping-Platform-with-Satellite-Foundation-Models"
