@@ -27,6 +27,36 @@ The complete processing pipeline consists of five major layers:
 
 5. GIS Visualization and Output Layer
 
+
+
+```
+Agricultural Field Polygons
+            |
+            v
+Geospatial Data Engineering
+            |
+            v
+Satellite Foundation Representations
+     +----------------+
+     |                |
+     v                v
+ AlphaEarth       Galileo
+     |                |
+     +----------------+
+            |
+            v
+Feature Engineering
+            |
+            v
+Vegetation Intelligence (NDVI + Polygon-MLP)
+            |
+            v
+Crop Classification (Crop-MLP)
+            |
+            v
+GIS Agricultural Intelligence Products
+```
+
 ---
 
 # 2. Architectural Design Principles
