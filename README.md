@@ -332,56 +332,74 @@ Crop Category Prediction
 
 # System Architecture
 
+The platform follows a modular end-to-end GeoAI architecture consisting of
+five major layers:
 
-```
-
-```
-                 User Interface Layer
-
-                          |
-                          |
-
-              GeoAI Processing Engine
-                          |
-    ------------------------------------------------
-    |                                              |
-```
-Geospatial Processing                         Machine Learning
-```
-    |                                              |
-```
-Polygon Validation                            Polygon-MLP
-
-Geometry Filtering                            Crop-MLP
-
-poly_id Generation                            Evaluation
-
-```
-    |
-    |
-```
-Satellite Representation Layer
-```
-    |
-    --------------------------------
-    |                              |
-```
-AlphaEarth                      Galileo
-```
-    |
-    |
-```
-Feature Engineering
-```
-    |
-    |
-```
-NDVI Vegetation Analysis
-```
-    |
-    |
-```
-GIS Crop Mapping Products
+```text
+                         User Interface Layer
+                                  |
+                                  |
+                                  v
+                    +-----------------------------+
+                    |   GeoAI Processing Engine   |
+                    +-----------------------------+
+                                  |
+          ------------------------------------------------
+          |                                              |
+          v                                              v
++-------------------------+              +------------------------------+
+| Geospatial Processing   |              | Machine Learning Intelligence|
++-------------------------+              +------------------------------+
+|                         |              |                              |
+| - Polygon Validation    |              | - Polygon-MLP                |
+| - Geometry Filtering    |              | - Crop-MLP                   |
+| - poly_id Generation    |              | - Model Evaluation           |
+|                         |              |                              |
++-------------------------+              +------------------------------+
+          |
+          |
+          v
++---------------------------------------------------------+
+|          Satellite Representation Layer                 |
++---------------------------------------------------------+
+                         |
+          --------------------------------
+          |                              |
+          v                              v
++-------------------+          +-------------------+
+|    AlphaEarth     |          |     Galileo       |
+| Satellite         |          | Satellite         |
+| Embeddings        |          | Representations   |
++-------------------+          +-------------------+
+          |
+          |
+          v
++----------------------------------------------------+
+|                 Feature Engineering                |
+|                                                    |
+| - Feature Fusion                                   |
+| - Statistical Representation                       |
+| - Embedding Preparation                            |
++----------------------------------------------------+
+          |
+          |
+          v
++----------------------------------------------------+
+|              NDVI Vegetation Intelligence          |
+|                                                    |
+| - Vegetation Detection                             |
+| - Non-Vegetation Filtering                         |
++----------------------------------------------------+
+          |
+          |
+          v
++----------------------------------------------------+
+|              GIS Crop Mapping Products             |
+|                                                    |
+| - Crop Classification Maps                         |
+| - GeoJSON / GeoPackage Outputs                     |
+| - Decision Support Visualization                   |
++----------------------------------------------------+
 
 ```
 
