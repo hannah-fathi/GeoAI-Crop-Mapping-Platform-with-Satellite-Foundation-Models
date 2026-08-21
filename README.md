@@ -869,8 +869,6 @@ Potential extensions:
 
 ## Hannah Fathi
 
-M.Sc. Artificial Intelligence and Robotics
-
 Fall 2025
 
 Research Interests:
