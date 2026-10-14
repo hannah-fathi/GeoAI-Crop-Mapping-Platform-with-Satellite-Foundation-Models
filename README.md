@@ -865,19 +865,11 @@ Potential extensions:
 
 ---
 
-# Author
+**Fall 2025**
 
-## Hannah Fathi
+## Author
 
-Fall 2025
-
-Research Interests:
-
-* Computer Vision
-* Remote Sensing
-* Medical AI
-* Large Language Models
-* GeoAI
+**Hannah Fathi** : Computer Vision · Medical AI · Representation Learning · Explainable AI · Foundation Models
 
 ---
 
